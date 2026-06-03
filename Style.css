@@ -1,5 +1,9 @@
 .BodyForm{
+<<<<<<< HEAD
     background-image: url("/Image/GreenCals.jpg");
+=======
+    background-image: url("Image/Calculator.jpg");
+>>>>>>> a2e1ea4ddfd3504ed405f8a5781e7baa703fa66e
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
