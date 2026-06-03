@@ -6,9 +6,9 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="Style.css" />
   </head>
-  <body>
+  <body class="BodyForm">
 
-    <h1 style="text-align: center; font-weight: bolder; font-size: 60px;">Calculator</h1>
+    <h1 style="text-align: center; font-weight: bolder; font-size: 60px; color: white;">Calculator</h1>
     
     <form class="Calculator">
       <div class="form-group">
@@ -16,31 +16,31 @@
       </div>
       
       <div class="form-group">
-        <button type="button" onclick = "addValue(`%`)">%</button>
+        <button type="button" onclick = "addValue(`%`)" class="operator">%</button>
         <button type="button" onClick = "clearValue()">C</button>
         <button type="button" onClick = "deleteCharacter()">DEL</button>
-        <button type="button" onClick = "addValue(`/`)">/</button>
+        <button type="button" onClick = "addValue(`/`)" class="operator">/</button>
       </div>
       
       <div class="form-group">
         <button type="button" onClick = "addValue(`1`)">1</button>
         <button type="button" onClick = "addValue(`2`)">2</button>
         <button type="button" onClick = "addValue(`3`)">3</button>
-        <button type="button" onClick = "addValue(`+`)">+</button>
+        <button type="button" onClick = "addValue(`+`)" class="operator">+</button>
       </div>
       
       <div class="form-group">
         <button type="button" onClick = "addValue(`4`)">4</button>
         <button type="button" onClick = "addValue(`5`)">5</button>
         <button type="button" onClick = "addValue(`6`)">6</button>
-        <button type="button" onClick = "addValue(`-`)">-</button>
+        <button type="button" onClick = "addValue(`-`)" class="operator">-</button>
       </div>
       
       <div class="form-group">
         <button type="button" onClick = "addValue(`7`)">7</button>
         <button type="button" onClick = "addValue(`8`)">8</button>
         <button type="button" onClick = "addValue(`9`)">9</button>
-        <button type="button" onClick = "addValue(`*`)">*</button>
+        <button type="button" onClick = "addValue(`*`)" class="operator">*</button>
       </div>
       
       <div class="form-group">

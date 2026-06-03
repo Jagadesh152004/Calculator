@@ -1,50 +1,150 @@
+.BodyForm{
+    background-image: url("/Image/Calculator.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
 .Calculator{
     width: 30vw;
     height: 70vh;
-    border: 2px solid rgb(49, 48, 48);
-    margin: auto;
+    /* border: 3px solid rgb(224, 217, 217); */
+    margin:auto;
     position: relative;
-    top: 50px;
+    top: 10px;
     display: grid;
     gap: 5px;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
+   /* background-color: rgb(224, 61, 12); */
+
+    background: rgba(255,255,255,0.08);
+
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+
+border: 2px solid rgba(255,255,255,0.2);
+
+box-shadow:
+    0 20px 40px rgba(0,0,0,0.5);
+        
+
 }
 .Calculator>.form-group{
     display: flex;
     justify-content: space-between;
-    gap: 5px;
+    gap: 10px;
 
 }
 
 .Calculator>.form-group>button{
     width: 25%;
-    font-size: 20px;
-    border:none;
-    background-color: rgb(107, 112, 112);
-    border-radius: 10px;
-    font-weight: 600;
+    /* font-size: 20px; */
+    /* background-color: rgb(164, 172, 172); */
+    /* border-radius: 10px; */
+    /* font-weight: 600; */
+    border: none;
+
+    border-radius: 12px;
+
+    background-color: #c2b9b9;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    transition: all 0.25s ease;
+
+    box-shadow:
+        0 4px 8px rgba(0,0,0,0.25);
 }
 
 
 .Calculator>.form-group>button:hover{
-    background-color: rgb(182, 162, 136);
+
+    background-color: rgb(73,26,26);
+    color:white;
+
+    transform:
+        translateY(-3px)
+        scale(1.03);
+
+    box-shadow:
+        0 0 20px rgba(255,255,255,0.3),
+        0 8px 20px rgba(0,0,0,0.3);
+}
+
+.Calculator>.form-group>button:active{
+
+    transform:
+        scale(0.92);
+
+    box-shadow:
+        inset 0 4px 10px rgba(0,0,0,0.5);
+
 }
 
 .Calculator>.form-group>input{
     width: 100%;
     font-size: 40px;
-    border: 2px solid rgb(68, 66, 66);
+    border: 2px solid rgb(124, 120, 120);
     text-align: end;
     outline: none;
     border-radius: 10px;
     padding-right: 15px;
-}
-.Calculator>.form-group>.evaluate{
+    /* background-color: rgb(5, 65, 5); */
     color: white;
-    background-color: blue;
+    background: linear-gradient(
+    to bottom,
+    #0a4d0a,
+    #022902
+);
+
+font-family: monospace;
+
+font-weight: bold;
+
+letter-spacing: 2px;
+
+box-shadow:
+    inset 0 0 15px rgba(0,0,0,0.5);
+}
+
+.Calculator>.form-group>.evaluate{
+
+    background: linear-gradient(
+        135deg,
+        #0066ff,
+        #00bfff
+    );
+
+    color:white;
+
 }
 
 .Calculator>.form-group>.evaluate:hover{
-    background-color:rgb(125, 46, 228);
+    
+    color: black;
+
+        background: linear-gradient(
+        135deg,
+        #00ff66,
+        #00cc44
+    );
+
+    color:black;
+
+    transform:
+        translateY(-3px)
+        scale(1.05);
+}
+
+.Calculator>.form-group>.operator{
+    background-color:#ff9500;
+    color:rgb(32, 30, 30);
+}
+
+.Calculator>.form-group>.operator:hover{
+    background-color:#ffb340;
 }
